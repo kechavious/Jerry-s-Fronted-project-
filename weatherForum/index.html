@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js"></script> -->
+
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Talk: Your Real Time Weather Forum!</title>
+    <!-- <script src="index.js"></script> -->
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <main>
+        <div id="menu">
+            <!--下拉菜单栏及网站名-->
+            <div class="website-name">
+                <a href="index.html">Weather Talk<a>
+            </div>
+
+            <div class="dropdown-contents">
+                <div class="explore">
+                    <a href="ourteam/our_team.html">Explore</a>
+                </div>
+
+                <div class="about-this-site">
+                    <div class="about-this-site-front">
+                        <a href="#">About this site</a>
+                    </div>
+                    <div class="about-this-site-content">
+                        <ul>
+                            <li><a href="#about-us">About us</a></li>
+                            <li><a href="#our-mission">Our Mission</a></li>
+                            <li><a href="#">Leadership</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <div class="user-name">
+                        <a href="login/login.html">login</a>
+                    </div>
+                    
+                    <div class="user-pic">
+                        <img src="pic/profile.png" alt="Your Picture Here">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--页面宽度缩小时也会显示内容-->
+        <div class="placeholder"></div>
+
+        <div id="intro">
+            <div class="intro-text">
+                <div class="bold-intro-text1">
+                    <p>
+                        Let the Weather Talk
+                    </p>
+                </div>
+    
+                <div class="normal-intro-text">
+                    <p>
+                        Tell others the real-time weather by
+                    </p>
+                </div>
+                
+                <div class="bold-intro-text2">
+                    <div class="commenting">
+                        <p>
+                            <strong>Commenting</strong> 
+                        </p>
+                    </div>
+    
+                    <div class="in-our-forum">
+                        <p>
+                            in our <strong>Forum</strong>!
+                        </p>
+                    </div>
+    
+                </div>
+                
+            </div>
+
+            <form class="join-us">
+                <input type="submit" value="Join Us !"><br>
+            </form>
+        </div>
+        
+        
+        <!--search for cities-->
+        <div id="search-container">
+            <form id="weather">
+                <label for="city-input"></label>
+                <input class="city" type="text" placeholder="Search your city">
+                <input type="submit" value="Submit"><br>
+            </form>
+            
+        </div>
+
+        <div id="about-us">
+            <h1>About Us</h1>
+            <p>
+                Weather Talk is an online platform and forum for real-time weather discussion. it is designed to for users to
+                share the current weather conditions in case of erroneous weather forecast. Based on your current location, we
+                will provide the weather discussion from people near you.
+            </p>
+        </div>
+
+        <div id="our-mission">
+            <h1>Our Mission</h1>
+            <p>
+                We aspire to provide the most accurate weather information through real-life comments and reports.
+                We hope Weather Talk could become your most trustworthy friend, and we hope that you won't get burned or wet
+                from wrong weather forecast!
+            </p>
+        </div>
+
+        
+        <!-- The weather info of {city} will be displayed here, through API
+        <div id="city-info"></div>
+
+        <div id="weather"></div>
+        <div id="temperature"></div>
+
+        <div id="comment"></div> -->
+      
+    </main>
+<!--     <script src="sketch.js"></script> -->
+        <div id="bottom">
+            <div id="copyright">
+                <p>Information provided by openweathermap.org, accessible at <a href="">https://openweathermap.org</a></p>
+            </div>
+        </div>
+    
+    
+        <script src="fetchAPI.js"></script>
+    </body>
+
+    
+</html>

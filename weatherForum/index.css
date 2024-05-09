@@ -1,0 +1,350 @@
+body {
+    /* background-image: linear-gradient(70deg, #02AABD, #00CDAC); */
+    /* padding-top: 60px; */
+    /* background-color: #; */
+
+}
+
+/* Navigation bar starts from here, each element is designed
+ * in an order from the left to the right of the page
+ * TODO: about-this-site can't have a proper dropdown content
+ */
+
+#menu {
+    display: flex;
+    color: #000000;
+    background-color: #35b5e8;
+    box-shadow: 5px 5px 100px rgb(100,100,100);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+#menu .website-name {
+    margin: 10px 10px 10px 10px;
+    padding: 0px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    height: 100%;
+}
+
+#menu .website-name a {
+    text-decoration: none;
+    color:#000000;
+    font-size: 30px;
+}
+
+#menu .website-name a:hover {
+    color:#d7d7d7
+}
+
+#menu .dropdown-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+#menu .dropdown-contents .explore {
+    margin-right: 20px;
+    display: inline-block;
+    height: 100%;
+    margin-top: 26px; /* Now I'm manually centering them. Maybe can be done more elegantly? */
+
+}
+
+#menu .dropdown-contents .about-this-site {
+    margin-right: 20px;
+    display: inline-block;
+    margin-top: 26px; /* Now I'm manually centering them. Maybe can be done more elegantly? */
+    
+}
+
+#menu .dropdown-contents a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+#menu .dropdown-contents a:hover {
+    color: #d7d7d7;
+}
+
+#menu .dropdown-contents .user {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#menu .dropdown-contents .user .user-name a {
+    margin-left: 10px;
+    margin-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #000000;
+}
+
+#menu .dropdown-contents .user .user-name a:hover {
+    color: #d7d7d7;
+}
+
+#menu .dropdown-contents .user .user-pic{
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    background-color: #F1F1F1;
+}
+
+#menu .dropdown-contents .user img{
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+    transform: translate(0% -10%);
+    transition: transform 0.3s ease; 
+}
+
+#menu .dropdown-contents .user img:hover {
+    transform: scale(1.2);
+
+}
+
+#menu .dropdown-contents .about-this-site {
+    height: 100%;
+}
+
+#menu .dropdown-contents .about-this-site .about-this-site-content {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    background-color: #35b5d1;
+    box-shadow: 5px 5px 100px rgb(100,100,100);
+    height: 0px;
+    transition: height 3s;
+}
+
+#menu .dropdown-contents .about-this-site .about-this-site-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu .dropdown-contents .about-this-site .about-this-site-content ul li {
+    height: 30px;
+}
+
+#menu .dropdown-contents .about-this-site .about-this-site-content ul li a {
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#menu .about-this-site:hover .about-this-site-content {
+    display: block;
+    height: 120px;
+}
+
+/* #menu .about-this-site .about-this-site-content:hover .about-this-site-content {
+    display: block;
+    height: 120px;
+} */
+
+/* Navigation bar ends from here */
+
+/* placeholder, for making the page more elegant, not that important */
+
+.placeholder {
+    height: 15px;
+}
+
+/* Placeholder ends from here */
+
+/* intro paragraphs "Let the Weather Talk", etc. starts from here*/
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 0;
+    padding-bottom: 55px;
+    background-image: url(/pic/background-demo.webp);
+    /* background-position: center;
+    background-size: cover; */
+
+}
+
+#intro .intro-text {
+    position: relative;
+    top: 40px;
+    margin-left: 30px;
+}
+
+#intro .intro-text .bold-intro-text1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    margin-bottom: 0px;
+}
+
+#intro .intro-text .normal-intro-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    margin-bottom: -20px;
+}
+
+#intro .intro-text .bold-intro-text2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 56px;
+}
+
+#intro .intro-text .bold-intro-text2 .commenting {
+    margin-bottom: -30px;
+    padding: 0%;
+}
+
+#intro .intro-text .bold-intro-text2 .in-our-forum {
+    margin-top: 0;
+    padding: 0;
+}
+
+#intro .join-us {
+    align-items: flex-end;
+    margin-right: 10%;
+}
+
+#intro .join-us input[type="submit"] {
+    transform: translate(0%, 175%);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 100px;
+    background-color: #FFFFFF; 
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#intro .join-us input[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+
+#search-container #weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-container #weather .city{
+    margin-top: 140px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    left: 50%;
+    transform: translate(0%, -50%);
+    width: 60%;
+    height: 60px;
+    box-shadow: 0 0 100px rgb(100, 100, 100, 0.4);
+    border-radius: 50px;
+}
+
+#search-container #weather input[type="text"] {
+    font-size: 30px;
+}
+
+#search-container #weather input[type="text"]::placeholder {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#search-container #weather input[type="submit"] {
+    position: absolute;
+    transform: translate(0px, 130px);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 100px;
+    background-color: #FFFFFF; 
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#search-container #weather input[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+#about-us {
+    position: relative;
+    top: 40px;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+#about-us h1 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+
+#about-us p {
+    padding: 0;
+    margin-top: 30px;
+    font-size: 40px;
+
+}
+
+#our-mission {
+    position: relative;
+    top: 40px;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+#our-mission h1{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+
+#our-mission p{
+    padding: 0;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+#bottom {
+    /* margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0; */
+    height: 370px;
+    background-color: #35b5d1;
+}
+
+#bottom #copyright {
+    margin-left: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    bottom: 0;
+}
+
+#comment {
+    
+}

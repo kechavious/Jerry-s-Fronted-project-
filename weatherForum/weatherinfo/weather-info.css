@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    display: flex;
+    color: #000000;
+    background-color: #35b5e8;
+    box-shadow: 5px 5px 100px rgb(100,100,100);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+#menu .website-name {
+    margin: 10px 10px 10px 10px;
+    padding: 0px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    height: 100%;
+}
+
+#menu .website-name a {
+    text-decoration: none;
+    color:#000000;
+    font-size: 30px;
+}
+
+#menu .website-name a:hover {
+    color:#d7d7d7
+}
+
+#menu .dropdown-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+#menu .dropdown-contents .explore {
+    margin-right: 20px;
+    display: inline-block;
+    height: 100%;
+    margin-top: 26px; /* Now I'm manually centering them. Maybe can be done more elegantly? */
+
+}
+
+#menu .dropdown-contents .about-this-site {
+    margin-right: 20px;
+    display: inline-block;
+    margin-top: 26px; /* Now I'm manually centering them. Maybe can be done more elegantly? */
+    
+}
+
+#menu .dropdown-contents a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+#menu .dropdown-contents a:hover {
+    color: #d7d7d7;
+}
+
+#menu .dropdown-contents .user {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#menu .dropdown-contents .user .user-name a {
+    margin-left: 10px;
+    margin-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #000000;
+}
+
+#menu .dropdown-contents .user .user-name a:hover {
+    color: #d7d7d7;
+}
+
+#menu .dropdown-contents .user .user-pic{
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    background-color: #F1F1F1;
+}
+
+#menu .dropdown-contents .user img{
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+    transform: translate(0% -10%);
+    transition: transform 0.3s ease; 
+}
+
+#menu .dropdown-contents .user img:hover {
+    transform: scale(1.2);
+
+}
+
+#menu .dropdown-contents .about-this-site {
+    height: 100%;
+}
+
+#menu .dropdown-contents .about-this-site .about-this-site-content {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    background-color: #35b5d1;
+    box-shadow: 5px 5px 100px rgb(100,100,100);
+    height: 0px;
+    transition: height 3s;
+}
+
+#menu .dropdown-contents .about-this-site .about-this-site-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu .dropdown-contents .about-this-site .about-this-site-content ul li {
+    height: 30px;
+}
+
+#menu .dropdown-contents .about-this-site .about-this-site-content ul li a {
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#menu .about-this-site:hover .about-this-site-content {
+    display: block;
+    height: 120px;
+}
+
+/* navbar ends from here */
+
+#general-info {
+    display: flex;
+    height: 400px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#general-info .city-name {
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#general-info .city-name p {
+    font-size: 80px;
+    font-weight: 150;
+}
+
+#general-info .weather-pic {
+    /* background-color: #000; */
+    height: 140px;
+    width: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+#general-info .weather-pic img {
+    height: inherit;
+    width: inherit;
+}
+
+#general-info .weather-of {
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#general-info .weather-of p {
+    font-size: 50px;
+    font-weight: 150;
+}
+
+#general-info .temperature-of {
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#general-info .temperature-of p {
+    font-size: 50px;
+    font-weight: 150;
+}
+
+#comment {
+    margin: 30px auto;
+    padding: 0;
+    height: 400px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+#comment h1 {
+    margin-left: 30px;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#comment .content {
+    height: 250px;
+    width: 90%;
+    border-radius: 20px;
+    border: 2px solid #000000
+}
+
